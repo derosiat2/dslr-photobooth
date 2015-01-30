@@ -11,13 +11,14 @@ I am currently having many issues with this program the most major one right now
 being that the performance of tkinter of loading the images for the preview is 
 super slow. So if anyone knows of a faster way to do this, that would be great. 
 
-PERFORMANCE ISSUES
+PERFORMANCE ISSUES: 
+
 ~.25 seconds for this ImaeTk.PhotoImage function 
 preview_photo = ImageTk.PhotoImage(raw_string) 
 
 ~.21 seconds for this create_image function 
 preview = pre_frame.create_image(320, 213, image=preview_photo) 
-END PERFORMANCE ISSUES
+
 
 The other major issue is that I don't know how to get a full size image capture. I can only
 get a preview sized image. I thought gp.gp_camera_capture(cam, fil, ctx) would get me a 
